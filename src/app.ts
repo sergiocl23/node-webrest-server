@@ -13,7 +13,7 @@ import { Server } from './presentation/server';
 function main() {
 
     const server = new Server({
-      port: envs.PORT,
+      port: +envs.PORT,
       public_path: envs.PUBLIC_PATH,
       routes: AppRoutes.routes,
     });
